@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.CSS">
+</head>
+<body>
+    <h1>Lista de tareas de donoso</h1>
+
+    <label class="tarea" for="tarea"> Tarea:</label>
+	<input type="text" id="tarea">
+	<button onclick="agregarTarea()">Enviar</button>
+    <br>
+    <ul id="lista"></ul>
+		<li>
+			<input type="checkbox" onclick="marcarTarea(this)"> Comprar <br>
+            <input type="checkbox" onclick="marcarTarea(this)"> Dormir <br>
+            <input type="checkbox" onclick="marcarTarea(this)"> Jugar <br>
+            <input type="checkbox" onclick="marcarTarea(this)"> Trabajar
+		</li>
+        <br> 
+    </ul>
+	<button onclick="eliminarTarea()">Eliminar tarea</button>
+    
+</body>
+</html>
